@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption site</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome</h1>
+        <h2>Our pets need a home.</h2>
+    </div>
+
+    <div class="filter-nav">
+        <a href="#" data-filter="all">All Animals</a>
+        <a href="#" data-filter="dog"><span class="only-large-screen">Only</span> dogs</a>
+        <a href="#" data-filter="cat"><span class="only-large-screen">Only</span> cats</a>
+        <a href="#" data-filter="rabbit"><span class="only-large-screen">Only</span> rabbbits</a>
+    </div>
+
+    <div class="animals">
+    </div>
+    <template id="animal-card">
+        <div class="animal-card">
+            <div class="animal-card-text">
+                <h3></h3>
+                <small><span class="age">3 Years old</span> 
+                    <span class="species">- Cat</span></small>
+                    <p class="description">text</p>
+                    <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
+            </div>
+            <div class="animal-card-photo">
+                <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" 
+                alt="A cat named Kitty">
+            </div>
+        </div>
+    </template> 
+
+</body>
+</html>
